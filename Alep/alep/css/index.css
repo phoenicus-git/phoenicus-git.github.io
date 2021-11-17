@@ -1,0 +1,214 @@
+@import "sanitize.css";
+/*! alep.css Template v0.1.0 | MIT License | https://github.com/AnimoPhoenicus/alep !*/
+/*/ Local Fonts /*/
+@font-face{ 
+  font-family:"local"; 
+  src: url("../fonts/DidactGothic.woff2") format("woff2"), url("/fonts/DidactGothic.woff")format("woff");
+  font-display:swap;
+  }
+  :root{
+/*/ FONTS /*/
+  --ff:"local", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --fs:18px;
+  }
+body {
+  --text: hsl(0, 0%, 7%);
+  --bkg: hsl(0, 0%, 97%);
+  --link:hsl(184, 87%, 27%);
+  --link-hover:orange;
+  --btn-bkg:hsla(0, 0%, 95%);
+  --logo: url(../logo/alep-dark-logo.svg) no-repeat;
+  --under: url(../icons/light-under.svg) repeat-x;
+}
+body.dark-theme {
+  --text: hsl(0, 0%, 93%);
+  --bkg: hsl(200, 18%, 26%);
+  --link:hsl(185, 67%, 80%);
+  --link-hover:hsl(185, 67%, 90%);
+  --btn-bkg:hsl(200, 18%, 36%);
+  --logo: url(../logo/alep-light-logo.svg) no-repeat;
+  --under: url(../icons/dark-under.svg) repeat-x;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+  --text: hsl(0, 0%, 93%);
+  --bkg: hsl(200, 18%, 26%);
+  --link:hsl(185, 67%, 80%);
+  --link-hover:hsl(185, 67%, 90%);
+  --btn-bkg:hsl(200, 18%, 36%);
+  --logo: url(../logo/alep-light-logo.svg) no-repeat;
+  --under: url(../icons/dark-under.svg) repeat-x;
+  } 
+  body.light-theme {
+  --text: hsl(0, 0%, 7%);
+  --bkg: hsl(0, 0%, 97%);
+  --link:hsl(184, 87%, 27%);
+  --link-hover:orange;
+  --btn-bkg:hsl(0, 0%, 95%);
+  --logo: url(../logo/alep-dark-logo.svg) no-repeat;
+  --under: url(../icons/light-under.svg) repeat-x;
+  }
+}
+*, ::before, ::after{box-sizing:inherit;margin:0;padding:0;}
+  html { scroll-behavior: smooth;height:100%;}
+  body{
+    height: 100%;
+    min-height:-webkit-fill-available;
+    background-color: var(--bkg);
+    color:var(--text);
+    font-family:var(--ff);
+    font-size:var(--fs);
+  }
+/*/ DEFAULTS /*/
+  /* Headings */
+  h1{font-size:1.5rem;}
+  h2{font-size:1.4rem;}
+  h3{font-size:1.3rem;}
+  h4{font-size:1.1rem;}
+  h5{font-size:1rem;}
+  h6{font-size:.8rem;}
+  /* Paragraphs */
+  p{margin:.5em 0;}
+  /* Links */
+  a:link{
+    color:var(--link);
+  }
+  a:visited{
+  color:var(--link);
+}
+  a:hover{
+  color:var(--link-hover);
+  text-decoration:none;
+}
+  a:active{
+  color:var(--link);
+}
+  a:focus{
+  outline: 1px solid var(--text);
+  border:2px solid var(--bkg);
+  border-radius: 2px;
+}
+
+/*/ END Defaults /*/
+
+/*/ GRIDS /*/
+  .main-grid{
+    display: grid;
+    grid-template:repeat(3,auto)/ auto minmax(auto, 60rem) auto;
+    align-content: space-between;
+    min-height:100vh;
+    min-height:-webkit-fill-available;
+  }
+  header{
+    grid-area: 1/2/1/2;
+    display:grid;
+    grid-template:1fr/ 1fr 1fr;
+    padding: .5em;
+  }
+  main{
+    grid-area: 2/2/2/2;
+    display:grid;
+    grid-template:repeat(3, auto)/1fr;
+    place-items: end;
+    padding:.5em;
+    text-align: right;
+  }
+  footer{
+    grid-area: 3/2/3/2;
+    display:grid;
+    grid-template:repeat(3, auto)/1fr 1fr;
+    padding:.5em;
+  }
+/*/ END Grids /*/
+/*/ HEADER /*/
+  .logo{
+    grid-area: 1/1/4/2;
+    background: var(--logo);
+    background-size: 2em 2em;
+    height:2em;
+    width:2em;
+  }
+  .title{ 
+    font-size:2rem;
+    font-weight: bold;
+  }
+  .controls{
+    grid-area: 1/3/1/3;
+  }
+  .controls a{
+    padding-right:.5em;
+  }
+  .btn-toggle{
+    background-color: var(--bkg);
+    border:0px;
+  }
+/*/ END Header /*/
+/*/ MAIN /*/
+  .alep-h1{
+    grid-area: 1/1/1/1;
+    background: var(--under);
+    background-position:bottom .25em right 0;
+    width:90%;
+    margin-top: 5em;
+  }
+  .subtitle{
+    grid-area:2/1/2/1;
+    margin-top: -.2em;
+  }
+  .authors{
+    grid-area: 3/1/3/1;
+    margin-top: 5em;
+  }
+  .authors a {
+    text-decoration:none;
+  }
+  .authors li{
+    list-style-type: none;
+    padding:.35em 0;
+  }
+/*/ END Main /*/
+/*/ Footer /*/
+  .random-post{
+    grid-area:1/1/1/3;
+    text-align: center;
+    margin-bottom:2rem;
+  }
+  .btn-random{
+    font-size:1.1rem;
+    border: 1px solid var(--text);
+    border-radius: 3px;
+    background-color: var(--btn-bkg);
+    padding:.5em;
+    color:var(--text);
+  }
+  nav{
+    grid-area:2/1/2/2;
+  }
+  nav li{
+    list-style-type: none;
+    padding:.35em 0;
+  }
+  nav a{
+    text-decoration: none;
+  }
+  .about{
+    grid-area:2/2/2/3;
+    place-self: center end;
+  }
+  .about a{
+    text-decoration: none;
+  }
+  .motto{
+    grid-area: 3/1/3/3;
+    place-self: center;
+    font-style: italic;
+    font-size: .8rem;
+  }
+/*/ SVG ICONS /*/
+#svg-none {
+  display:none;
+}
+[id^="svg-"]{
+  fill:var(--text);
+}
