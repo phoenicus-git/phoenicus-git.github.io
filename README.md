@@ -1,5 +1,4 @@
-# Phoenicus Online NNSS
+# Phoenicus Gallery
 
-
-[![html glitch finder](/icons/black-cat.png)](https://www.flaticon.com/authors/amonrat-rungreangfangsai, "Feel's like déjà vu")
+[![html glitch finder](root/icons/cat.webp)](https://www.flaticon.com/authors/eucalyp, "Feel's like déjà vu")
 *Déjà vu...*
