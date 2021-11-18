@@ -235,7 +235,6 @@ html { scroll-behavior: smooth;height:100%;}
   .content-grid{
     grid-area:2/2/2/2;
     background-color:var(--content-bkg);
-    margin:0 .5em;
     border:1px solid var(--btn-bkg);
     border-radius:.3em;
     margin:0 .5em;

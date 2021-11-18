@@ -234,13 +234,9 @@ html { scroll-behavior: smooth;height:100%;}
   }
   .content-grid{
     grid-area:2/2/2/2;
-    background-color:var(--content-bkg);
-    margin:0 .5em;
-    border:1px solid var(--btn-bkg);
-    border-radius:.3em;
+    background-color:var(--bkg);
     margin:0 .5em;
     padding:.5em;
-    box-shadow: 0 .1em .35em var(--shadow);
     z-index: 1;
   }
   .footer-grid{
