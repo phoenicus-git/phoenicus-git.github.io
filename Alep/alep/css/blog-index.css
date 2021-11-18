@@ -308,11 +308,10 @@ html { scroll-behavior: smooth;height:100%;}
     padding:.35em;
     font-weight:bold;
   }
-
   .categories li::before{
     content:"\00A7";
     color:var(--link-hover);
-    font-size:1rem;
+    font-size:1.5rem;
     padding-right:.1em;
   }
   .tags{
