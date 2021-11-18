@@ -1,5 +1,11 @@
  [
   {
-  "url":"blog/single-article.html"
+    "url":"blog/posts/single-article"
+  },
+  {
+    "url":"blog/posts/article-part-I"
+  },
+  {
+    "url":"blog/posts/article-part-II"
   }
 ]
