@@ -167,6 +167,21 @@ body.dark-theme {
     list-style-type: none;
     padding:.35em 0;
   }
+  /* 404 */
+  .p-404{
+    place-self: center;
+  }
+  .p-404 h2{
+    text-align:center;
+    font-size: 1.3rem;
+    margin:1em 0 6em 0;
+  }
+  .droid{
+    background: url(../../../root/icons/droid.png) no-repeat; 
+    background-position: bottom -.05em right .5em; 
+    height:60px; 
+    border-bottom:.3em solid var(--text);
+  }
 /*/ END Main /*/
 /*/ Footer /*/
   .random-post{
