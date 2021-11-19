@@ -240,9 +240,13 @@ html { scroll-behavior: smooth;height:100%;}
       padding:0 .1em;
       border-radius:5px;
     }
-    main ul, main ol{
-      margin:1.5em;
-    }
+  main ul, main ol{
+    margin: 1em 1.5em;
+  }
+  main ol{
+    list-style-type:lower-roman ;
+  }
+    
 /*/ GRIDS /*/
   .body-grid{
     display:grid;
