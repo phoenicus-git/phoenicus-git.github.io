@@ -20,7 +20,7 @@ body {
   --shadow:#121212;
   --logo: url(../logo/alep-dark-logo.svg) no-repeat; 
   --under: url(../icons/light-under.svg) repeat-x; 
-  --sig: url(../icons/sig/dark-AliceX.svg) no-repeat; 
+  --sig: url(../icons/sig/dark-DevidJs.svg) no-repeat; 
   --ext-link: url(../icons/dark-external-link.svg);
 }
 body.dark-theme {
