@@ -109,14 +109,14 @@ html { scroll-behavior: smooth;height:100%;}
   }
 
 /* Multimedia */
-  main img, main video {
+  article img, article video {
     max-width: 100%;
 
     height: auto;
     border-radius:5px;
     aspect-ratio: attr(width) / attr(height);
   }
-    img:not(.figure) {
+    img:not(.figure):not(.kofiimg) {
     box-shadow: 0 .1em .35em var(--shadow);
     border:1px solid var(--bkg);
     background-color: var(--bkg);
@@ -514,17 +514,10 @@ html { scroll-behavior: smooth;height:100%;}
     }
 
 img.kofiimg{
-  display: initial!important;
-  vertical-align:middle;
-  height:13px!important;
-  width:20px!important;
-  padding-top:0!important;
-  padding-bottom:0!important;
-  border:none;
-  margin-top:0;
-  margin-right:5px!important;
-  margin-left:0!important;
-  margin-bottom:3px!important;
+  height:13px;
+  width:20px;
+  padding:0;
+  margin:0 5px 3px 0;
   content:url('https://storage.ko-fi.com/cdn/cup-border.png')
   }
   .kofiimg:after{
@@ -540,20 +533,16 @@ img.kofiimg{
     content:url('https://storage.ko-fi.com/cdn/whitelogo.svg')
     }
     .btn-container{
-    display:inline-block!important;
+      display:flex ;
+    justify-content: center;
     white-space:nowrap;
-    min-width:160px
     }
     span.kofitext{
-    color:#fff !important;
-    letter-spacing: -0.15px!important;
+    color:var(--text);
     text-wrap:none;
-    vertical-align:middle;
-    line-height:33px !important;
     padding:0;
     text-align:center;
-    text-decoration:none!important; 
-    text-shadow: 0 1px 1px rgba(34, 34, 34, 0.05);
+    text-decoration:none; 
     }
     .kofitext a{
     color:#fff !important;
@@ -564,24 +553,18 @@ img.kofiimg{
     text-decoration:none
     }
     a.kofi-button{
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-    line-height:36px!important;
     min-width:150px;
-    display:inline-block!important;
-    background-color:#29abe0;
+    display:inline-block;
     padding:2px 12px !important;
-    text-align:center !important;
-    border-radius:7px;
-    color:#fff;
-    cursor:pointer;
+    text-align:center;
     overflow-wrap:break-word;
-    vertical-align:middle;
-    border:0 none #fff !important;
-    font-family:'Quicksand',Helvetica,Century Gothic,sans-serif !important;
     text-decoration:none;
-    text-shadow:none;
-    font-weight:700!important;
-    font-size:14px !important}
+    border: 1px solid var(--text);
+    border-radius: 3px;
+    background-color: var(--btn-bkg);
+    padding:.5em;
+    color:var(--text);
+    }
     a.kofi-button:visited{
     color:#fff !important;
     text-decoration:none !important
