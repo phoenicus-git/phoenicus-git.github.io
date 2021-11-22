@@ -20,7 +20,7 @@ body {
   --shadow:#121212;
   --logo: url(../logo/alep-dark-logo.svg) no-repeat; 
   --under: url(../icons/light-under.svg) repeat-x; 
-  --sig: url(../icons/sig/dark-DevidJs.svg) no-repeat; 
+  --sig: url(../icons/sig/dark-AliceX.svg) no-repeat; 
   --ext-link: url(../icons/dark-external-link.svg);
 }
 body.dark-theme {
@@ -300,8 +300,13 @@ html { scroll-behavior: smooth;height:100%;}
           display:grid;
           grid-template:auto/1fr;
         }
+        .category{
+          grid-area: 1/1/1/1;
+          font-size:.9rem;
+        }
         .part{
           grid-area:1/1/1/1;
+          place-self: end;
           text-align: right;
           font-size: .9rem;
         }
@@ -373,13 +378,28 @@ html { scroll-behavior: smooth;height:100%;}
         display:none;
       }
   .article-info{
-    margin-top:2em;
+    background-color:var(--bkg);
+    border:1px solid var(--link);
+    border-radius:5px;
+    margin:2em 0;
+    padding: .5em;
     place-self:center;
     text-align:center;
     font-size:.9rem;
   }
   .article-info p{
     text-align: center;
+  }
+  .article-info li{
+    display: inline-block;
+    list-style-type: none;
+    padding: .5em;
+  }
+  .article-info li::before{
+    content: '#';
+    font-size: 1.5rem;
+    color:var(--link-hover);
+    padding-right: .1em;
   }
       .related{
         display: grid;
