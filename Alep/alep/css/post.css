@@ -1,4 +1,5 @@
-@import "sanitize.css";
+@import "cookieconsent.css";
+
 /*! alep.css Template v0.1.0 | MIT License | https://github.com/AnimoPhoenicus/alep !*/
 /*/ Local Fonts /*/
 @font-face{ 
@@ -643,3 +644,4 @@ img.kofiimg{
     background: #222;
     color: #fff;
 }
+
