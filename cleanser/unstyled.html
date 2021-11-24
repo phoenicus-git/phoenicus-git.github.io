@@ -105,15 +105,16 @@
       </tr> 
     </tfoot>
 </table><br>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="blank">Image, &lt;img&gt;</a>:<br> <img src="https://www.phoenicus.ga/cleanser/uploads/1280x720.webp" width="1280" height="720" alt="Placeholder image: 1366x768.webp"><br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="blank">Image, &lt;img&gt;</a>:<br>
+  (360x203, 640x360, 854x480, 1280x720, 1920x1080, 3840x2160, @100vw, .webm and .png)<br> 
+  <img srcset="https://www.phoenicus.ga/cleanser/uploads/360x203.webp 360w, https://www.phoenicus.ga/cleanser/uploads/640x360.webp 640w, https://www.phoenicus.ga/cleanser/uploads/854x480.webp 854w, https://www.phoenicus.ga/cleanser/uploads/1280x720.webp 1280w, https://www.phoenicus.ga/cleanser/uploads/1920x1080.webp 1920w, https://www.phoenicus.ga/cleanser/uploads/3840x2160.webp 3840w"
+  sizes="(min-width: 360px) 100vw, (min-width: 640px) 100vw, (min-width: 854px) 100vw, (min-width: 1280px) 100vw, (min-width: 1920px) 100vw, 100vw"
+  src="https://www.phoenicus.ga/cleanser/uploads/1280x720.webp" width="1280" height="720" alt="Placeholder image: 1366x768.webp"><br>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="blank">Figure, &lt;figure&gt;</a>:<br> <figure><img src="https://www.phoenicus.ga/cleanser/uploads/1280x720.webp" width="1280" height="720" alt="Figure alt"/><figcaption>Figcaption of Placehorder Image 1280x720.webp</figcaption></figure><br>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="blank">Picture, &lt;picture&gt;</a>:<br>
-  (360x203, 640x360, 854x480, 1280x720, 1920x1080, 3840x2160. .webm and .png)<br>
+  (1280x720, .webp or .png)<br>
   <picture>
-    <source srcset="https://www.phoenicus.ga/cleanser/uploads/360x203.webp 360w, https://www.phoenicus.ga/cleanser/uploads/640x360.webp 640w, https://www.phoenicus.ga/cleanser/uploads/854x480.webp 854w, https://www.phoenicus.ga/cleanser/uploads/1280x720.webp 1280w, https://www.phoenicus.ga/cleanser/uploads/1920x1080.webp 1920w, https://www.phoenicus.ga/cleanser/uploads/3840x2160.webp 3840w"
-    sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 854px) 854px,(max-width:1280px)1280px, (max-width: 1920px) 1920px, 3840px"> 
-    <source srcset="https://www.phoenicus.ga/cleanser/uploads/360x203.png 360w, https://www.phoenicus.ga/cleanser/uploads/640x360.png 640w, https://www.phoenicus.ga/cleanser/uploads/854x480.png 854w, https://www.phoenicus.ga/cleanser/uploads/1280x720.png 1280w, https://www.phoenicus.ga/cleanser/uploads/1920x1080.png 1920w, https://www.phoenicus.ga/cleanser/uploads/3840x2160.png 3840w"
-    sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 854px) 854px,(max-width:1280px)1280px, (max-width: 1920px) 1920px, 3840px">
+    <source srcset="https://www.phoenicus.ga/cleanser/uploads/1280x720.webp" type="image/webp">
     <img src="https://www.phoenicus.ga/cleanser/uploads/1280x720.png" alt="Placeholder Image">
   </picture><br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="blank">Video, &lt;video&gt;</a>:<br>
@@ -132,7 +133,7 @@
 &lt;/article&gt;
 </article>
 <section><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="blank">&lt;section&gt;</a>
-  Section
+  <h2>Section</h2>
   &lt;/section&gt;</section>
 <aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="blank">&lt;aside&gt;</a>
   Aside
