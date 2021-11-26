@@ -95,7 +95,7 @@ body.dark-theme {
 /*/ GRIDS /*/
   .main-grid{
     display: grid;
-    grid-template:repeat(3,auto)/ auto minmax(auto, 60rem) auto;
+    grid-template:repeat(4,auto)/ auto minmax(auto, 60rem) auto;
     align-content: space-between;
     min-height:100vh;
     min-height:-webkit-fill-available;
@@ -226,4 +226,27 @@ body.dark-theme {
 }
 [id^="svg-"]{
   fill:var(--text);
+}
+.cookie-banner{
+  position:absolute;
+  z-index:1;
+  background-color: #ccc;
+  bottom:10%;
+  border:1px solid black;
+  display:grid;
+  grid-template:auto/ repeat(3,auto);
+}
+.cookie-text{
+  grid-area:1/1/1/4;
+  text-align:center;
+}
+.cookie-read{
+  grid-area:2/1/2/1
+  place-self:center;
+}
+.cookie-accept{
+  grid-area:2/2/2/2;
+}
+.cookie-reject{
+  grid-area:2/3/2/3;
 }

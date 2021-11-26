@@ -101,6 +101,7 @@
 
           // Delete existing tracking cookies
           _this.trackingCookiesNames.map(_this.deleteCookie);
+          console
         });
       }
     },
