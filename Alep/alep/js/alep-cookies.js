@@ -12,8 +12,6 @@ const cookieBanner = `<div class="cookie-banner">
     </div><!--.cookie-buttons-->
   </div><!--cookie-banner-->`;
 insertBanner.insertAdjacentHTML('afterend', cookieBanner);
-//document.body.innerHTML = cookieBanner;
-
 const acceptCookiesBtn = document.querySelector('.cookie-accept');
 const rejectCookieBtn = document.querySelector('.cookie-reject');
 console.log('loaded');
