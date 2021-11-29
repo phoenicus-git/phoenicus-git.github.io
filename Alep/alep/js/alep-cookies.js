@@ -43,9 +43,18 @@ acceptCookiesBtn.addEventListener(`click`, function() {
   console.log(`removed`);
 });
 rejectCookieBtn.addEventListener(`click`, function () {
-  sessionStorage.setItem(`cookies`, `permissionDenied`);
-  banner.remove();
-  console.log(`removed`);
+ // sessionStorage.setItem(`cookies`, `permissionDenied`);
+  
+    var hostname = document.location.hostname.replace(/^www\./, ''),
+    commonSuffix = '; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/';
+console.log(hostname);
+document.cookie = _ga + '=; domain=.' + hostname + commonSuffix;
+document.cookie = _ga + '=' + commonSuffix;
+console.log(document.cookie);
+console.log(`removed`);
+
+  //banner.remove();
+ 
 });
   console.log(`loaded`);
 }
