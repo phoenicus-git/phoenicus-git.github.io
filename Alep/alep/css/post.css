@@ -644,4 +644,12 @@ img.kofiimg{
     background: #222;
     color: #fff;
 }
-
+.cookie-banner{
+  grid-area: auto/1/auto/-1;
+  position:sticky;
+  bottom:0;
+  z-index:1;
+  background-color: var(--content-bkg);
+  padding: .5em;
+  border-top:3px solid var(--link);
+}
