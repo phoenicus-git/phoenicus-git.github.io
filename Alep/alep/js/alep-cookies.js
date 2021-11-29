@@ -48,8 +48,10 @@ rejectCookieBtn.addEventListener(`click`, function () {
     var hostname = document.location.hostname.replace(/^www\./, ''),
     commonSuffix = '; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/';
 console.log(hostname);
-document.cookie = _ga + '=; domain=.' + hostname + commonSuffix;
-document.cookie = _ga + '=' + commonSuffix;
+document.cookie = `_ga_YMCRZXGLS8` + '=; domain=.' + hostname + commonSuffix;
+document.cookie = `_ga_YMCRZXGLS8` + '=' + commonSuffix;
+document.cookie = `_ga` + '=; domain=.' + hostname + commonSuffix;
+document.cookie = `_ga` + '=' + commonSuffix;
 console.log(document.cookie);
 console.log(`removed`);
 
