@@ -1,0 +1,26 @@
+body{
+  background-color: #000;
+  color:#f5f5f5;
+  font-family: monospace;
+}
+.logon {
+  display:grid;
+  grid-template:auto/1fr 1fr 1fr;
+}
+.exit-Btn{
+  grid-area: 1/3/1/3;
+  place-self: end;
+  background-color: #f5f5f5;
+  border:1px solid #151515;
+  padding:.5em;
+  border-radius:50%;
+}
+.logon-form{
+  grid-area:2/1/2/3;
+  border:1px solid yellow;
+}
+.text{
+  grid-area:3/1/3/3;
+  place-self: center;
+  border:1px solid green;
+}
