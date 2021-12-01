@@ -17,33 +17,35 @@ const submit = document.querySelector(".submit");
 
   submit.addEventListener('click', function () { 
     let userLogon = document.querySelector(`.input`).value;
-    console.log(userLogon);
-      if ( userLogon === logon ){
+      if ( userLogon.toUpperCase() === logon.toUpperCase() ){
         insResp.insertAdjacentHTML(`beforeend`, successResp);
         let respBtn = document.querySelector(`.resp-btn`);
           respBtn.addEventListener(`click`, function() {
           window.location = "/secret/the-net.html"; 
           });
-      } else if ( userLogon === helpLog) {
+      } else if ( userLogon.toUpperCase() === helpLog.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, helpLogon);
         let respText = document.querySelector(`.resp-text`);
         let respBtn = document.querySelector(`.resp-btn`);
           respBtn.addEventListener(`click`, function() {
           respText.remove();
+          document.querySelector(`.input`).value = ``;
           });
-      } else if ( userLogon === helpG ) {
+      } else if ( userLogon.toUpperCase() === helpG.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, helpGames);
         let respText = document.querySelector(`.resp-text`);
         let respBtn = document.querySelector(`.resp-btn`);
           respBtn.addEventListener(`click`, function() {
           respText.remove();
+          document.querySelector(`.input`).value = ``;
           });
-      } else if ( userLogon === listG ) {
+      } else if ( userLogon.toUpperCase() === listG.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, listGames);
         let respText = document.querySelector(`.resp-text`);
         let respBtn = document.querySelector(`.resp-btn`);
           respBtn.addEventListener(`click`, function() {
           respText.remove();
+          document.querySelector(`.input`).value = ``;
           });
       } else {
         insResp.insertAdjacentHTML(`beforeend`, errorResp);
@@ -51,6 +53,7 @@ const submit = document.querySelector(".submit");
         let respBtn = document.querySelector(`.resp-btn`);
           respBtn.addEventListener(`click`, function() {
           respText.remove();
+          document.querySelector(`.input`).value = ``;
           });
       }
   //banner.remove();
