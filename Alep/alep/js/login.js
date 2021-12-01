@@ -27,7 +27,7 @@ const insertBanner = document.querySelector(`.text`);
 const logonBanner = `<div class="success-text"><h2>GREETINGS PROFESSOR FALKEN</h2><br><button class="successBtn">SHALL WE PLAY A GAME</button></div>`;
 const successBanner =`<div class="success-text"><h2>GREETINGS PROFESSOR FALKEN</h2><br><button class="successBtn">SHALL WE PLAY A GAME</button></div>`
 const errorBanner = `<div class="error-text"><h2>** IDENTIFICATION NOT RECOGNIZED **</h2><p>** ACCESS DENIED **</p><button class="okBtn">Ok</button></div>`
-insertBanner.insertAdjacentHTML(`afterend`, logonBanner)
+insertBanner.insertAdjacentHTML(`beforeend`, logonBanner)
 const logonform = document.querySelector(`.logon-banner`);
 const logon = `Joshua`;
 if ( userLogon === logon ){
