@@ -10,8 +10,8 @@ body{
   font-size:20px;
   line-height:1.5;
 }
-h1{font-size:1.5rem; padding:0; margin:0;}
-h2{font-weight: normal; font-size:1.5rem;}
+h1, h2{font-size: 1.5rem; font-weight: normal; padding:0;}
+h1{margin:0;}
 .grid{
   display:grid;
   grid-template:auto/auto minmax(auto, 60rem) auto;
@@ -24,7 +24,7 @@ h2{font-weight: normal; font-size:1.5rem;}
 .logon-form{
   margin-top:2em;
 }
-.exit-Btn{
+.exit-btn{
   grid-area: 1/3/1/3;
   place-self: end;
   background-color:#0a0e0d ;

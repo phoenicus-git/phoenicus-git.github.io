@@ -3,6 +3,8 @@
 (function(){
 `use strict`;
   const insResp = document.querySelector(`.text`);
+  const submit = document.querySelector(`.submit`);
+  const exit = document.querySelector(`.exit-btn`);
   const successResp = `<div class="resp-text"><h2>GREETINGS PROFESSOR FALKEN.</h2><br><button class="resp-btn">SHALL WE PLAY A GAME?</button></div>`;
   const errorResp = `<div class="resp-text"><h2> IDENTIFICATION NOT RECOGNIZED BY SYSTEM</h2><p class="blink">--CONNECTION TERMINATED--</p><button class="resp-btn">Ok</button></div>`;
   const helpLogon = `<div class="resp-text"><h2> HELP NOT AVAILABLE</h2><button class="resp-btn">Ok</button></div>`;
@@ -12,11 +14,18 @@
   const helpLog = `Help Logon`;
   const helpG = `Help Games`;
   const listG = `List Games`;
-  const exit = document.querySelector(`.exit-btn`);
+  
   exit.addEventListener(`click`, function() {
     window.location = `../index.html`;
   });
-  const submit = document.querySelector(`.submit`);
+  function banner(){
+    let respText = document.querySelector(`.resp-text`);
+    let respBtn = document.querySelector(`.resp-btn`);
+    respBtn.addEventListener(`click`, function() {
+          respText.remove();
+          document.querySelector(`.input`).value = ``;
+      });
+  };
   submit.addEventListener(`click`, function () { 
     let userLogon = document.querySelector(`.input`).value;
       if ( userLogon.toUpperCase() === logon.toUpperCase() ){
@@ -27,36 +36,16 @@
           });
       } else if ( userLogon.toUpperCase() === helpLog.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, helpLogon);
-        let respText = document.querySelector(`.resp-text`);
-        let respBtn = document.querySelector(`.resp-btn`);
-          respBtn.addEventListener(`click`, function() {
-          respText.remove();
-          document.querySelector(`.input`).value = ``;
-          });
+        banner();
       } else if ( userLogon.toUpperCase() === helpG.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, helpGames);
-        let respText = document.querySelector(`.resp-text`);
-        let respBtn = document.querySelector(`.resp-btn`);
-          respBtn.addEventListener(`click`, function() {
-          respText.remove();
-          document.querySelector(`.input`).value = ``;
-          });
+        banner();
       } else if ( userLogon.toUpperCase() === listG.toUpperCase() ) {
         insResp.insertAdjacentHTML(`beforeend`, listGames);
-        let respText = document.querySelector(`.resp-text`);
-        let respBtn = document.querySelector(`.resp-btn`);
-          respBtn.addEventListener(`click`, function() {
-          respText.remove();
-          document.querySelector(`.input`).value = ``;
-          });
+        banner();
       } else {
         insResp.insertAdjacentHTML(`beforeend`, errorResp);
-        let respText = document.querySelector(`.resp-text`);
-        let respBtn = document.querySelector(`.resp-btn`);
-          respBtn.addEventListener(`click`, function() {
-          respText.remove();
-          document.querySelector(`.input`).value = ``;
-          });
+        banner();
       }
   });
 })();
