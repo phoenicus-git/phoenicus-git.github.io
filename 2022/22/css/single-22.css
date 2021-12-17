@@ -1,0 +1,7 @@
+/*/ single-22.css Template v0.0.1 | MIT License | https://github.com/phoenicus-git/22 /*/
+/*/ Import global css rules /*/
+@import url(global-22.css);
+header{
+  display:grid;
+  grid-template:auto/repeat(3, auto);
+}
