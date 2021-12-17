@@ -1,0 +1,9 @@
+/*/ index-22.css Template v0.0.1 | MIT License | https://github.com/phoenicus-git/22 /*/
+/*/ Import global css rules /*/
+@import url(global-22.css);
+.redacted{
+  background-color:#000;
+}
+  .w600{font-weight: 300;}
+  .w700{font-weight:400;}
+  .w800{font-weight: 700;}
