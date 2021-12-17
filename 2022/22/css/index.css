@@ -1,0 +1,25 @@
+/*/ index-22.css Template v0.0.1 | MIT License | https://github.com/phoenicus-git/alep /*/
+/*/ Local Fonts /*/
+@font-face{ 
+  font-family:"local"; 
+  src: url("../fonts/OpenSans.woff2") format("woff2");
+
+  
+  font-display:swap;
+  }
+  :root{
+/*/ FONTS /*/
+  --ff:"local", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --fs:18px;
+  } 
+  body{
+    font-family: "local";
+    font-size: 32px;
+    font-style: normal;
+  }
+  .w300{font-weight: lighter;}
+  .w400{font-weight:normal;}
+  .w500{font-weight: bold;}
+  .w600{font-weight: bolder;}
+  .w700{font-weight:700;}
+  .w800{font-weight: 800;}

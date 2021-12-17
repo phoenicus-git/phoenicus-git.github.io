@@ -10,7 +10,7 @@
 /*/ FONTS /*/
   --ff:"local", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --fs:18px;
-  }
+  } 
 body {
   --text: hsl(0, 0%, 7%);
   --bkg: hsl(0, 0%, 97%);
