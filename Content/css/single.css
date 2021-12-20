@@ -63,7 +63,9 @@ h6{
   line-height: calc(var(--lh)/.8);
 }
 p{
+  text-align: justify;
   word-break: break-all;
   -webkit-hyphens: auto;
-  hyphens: auto;
+  -moz-hyphens:auto;
+  hyphens:auto;
 }
