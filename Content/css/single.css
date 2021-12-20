@@ -40,32 +40,28 @@ body{
 }
 h1{
   font-size:1.8rem;
-  line-height: calc(var(--lh)/1.8);
 }
 h2{
   font-size: 1.6rem;
-  line-height: calc(var(--lh)/1.6);
 }
 h3{
   font-size: 1.4rem;
-  line-height:calc(var(--lh)/1.4);
 }
 h4{
   font-size: 1.2rem;
-  line-height: calc(var(--lh)/1.2);
 }
 h5{
   font-size: 1rem;
-  line-height: var(--lh);
 }
 h6{
   font-size:.8rem;
-  line-height: calc(var(--lh)/.8);
 }
-p{
-  text-align: justify;
-  word-break: break-all;
-  -webkit-hyphens: auto;
-  -moz-hyphens:auto;
-  hyphens:auto;
+[role="doc-subtitle"] {
+  font-size:.9rem;
+  text-transform: uppercase;
+  margin-top:-1.8rem;
+  font-weight: 300;
+}
+p:first-of-type, h2 + p, h3 + p, h4 + p{
+  text-indent:2rem;
 }
