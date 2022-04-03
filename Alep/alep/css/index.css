@@ -51,7 +51,7 @@ body.dark-theme {
   }
 }
 *, ::before, ::after{box-sizing:inherit;margin:0;padding:0;}
-  html { scroll-behavior: smooth;height:100%;}
+  html { display:grid;scroll-behavior: smooth;min-height:100%;}
   body{
     height: 100%;
     min-height:-webkit-fill-available;
